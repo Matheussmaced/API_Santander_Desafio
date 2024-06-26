@@ -26,10 +26,10 @@ classDiagram
         description: string
     }
 
-    Usuario --> Conta : has
-    Usuario --> Features : has
-    Usuario --> Cartao : has
-    Usuario --> News : has
+    Usuario "1" *--> "1" Conta : has
+    Usuario "1" *--> "N"  Features : has
+    Usuario  "1"  *--> "1" Cartao : has
+    Usuario  "1"  *--> "N"  News : has
     
   
 ```
